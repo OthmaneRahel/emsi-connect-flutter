@@ -73,54 +73,7 @@ class HomePage extends StatelessWidget{
                 textAlign: TextAlign.center,
                 ),
   
-                const SizedBox(height: 50),
-
-                // Row(
-                //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                //     children: [
-                //         Container(
-                //         child: Column(
-                //             children: [
-                //             Icon(Icons.menu_book, size: 40),
-                //             Text('Mes cours'),
-                //             ],
-                //         ),
-                //         ),
-                //         Container(
-                //         child: Column(
-                //             children: [
-                //             Icon(Icons.calendar_month, size: 40),
-                //             Text('Planning'),
-                //             ],
-                //         ),
-                //         ),
-                //     ],
-                // ),
-
-                // const SizedBox(height: 20),
-
-                // Row(
-                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                // children: [
-                //     Container(
-                //     child: Column(
-                //         children: [
-                //         Icon(Icons.person, size: 40),
-                //         Text('Mon profil'),
-                //         ],
-                //     ),
-                //     ),
-                //     Container(
-                //     child: Column(
-                //         children: [
-                //         Icon(Icons.task_alt, size: 40),
-                //         Text('Mes tâches'),
-                //         ],
-                //     ),
-                //     ),
-                // ],
-                // ),
-                
+                const SizedBox(height: 50),                
 
                 Row(
                 children: [
@@ -128,7 +81,7 @@ class HomePage extends StatelessWidget{
                     child: Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                        color: Colors.blue.shade50,
+                        color: const Color.fromARGB(255, 138, 206, 255),
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
                             color: Colors.blue.shade100,
@@ -149,11 +102,12 @@ class HomePage extends StatelessWidget{
 
                     const SizedBox(width: 12),
 
-                    Expanded(
+                    Flexible(
+                    fit: FlexFit.tight,
                     child: Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                        color: Colors.blue.shade50,
+                        color: const Color.fromARGB(255, 138, 206, 255),
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
                             color: Colors.blue.shade100,
@@ -183,7 +137,7 @@ class HomePage extends StatelessWidget{
                     child: Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                        color: Colors.blue.shade50,
+                        color: const Color.fromARGB(255, 138, 206, 255),
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
                             color: Colors.blue.shade100,
@@ -208,7 +162,7 @@ class HomePage extends StatelessWidget{
                     child: Container(
                         padding: const EdgeInsets.all(16),
                         decoration: BoxDecoration(
-                          color: Colors.blue.shade50,
+                          color: const Color.fromARGB(255, 138, 206, 255),
                           borderRadius: BorderRadius.circular(20),
                           border: Border.all(
                               color: Colors.blue.shade100,
