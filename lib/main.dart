@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'screens/home_page.dart';
 import 'screens/profile_page.dart';
 import 'screens/CoursesPages.dart';
+import 'screens/Authentification&Register/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: const CoursesPage(),
+      home: const LoginPage(),
     );
   }
 }
