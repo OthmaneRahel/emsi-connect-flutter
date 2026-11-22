@@ -4,6 +4,7 @@ import 'package:emsi_connect/screens/profile_page.dart';
 import 'package:emsi_connect/screens/Authentification&Register/login_page.dart';
 import 'package:emsi_connect/screens/settings_page.dart';
 import 'package:emsi_connect/screens/about_page.dart';
+import 'package:emsi_connect/screens/multimedia_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -77,6 +78,16 @@ class HomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => const AboutPage()),
                 );
+              },
+            ),
+
+            ListTile(
+              leading: const Icon(Icons.perm_media),
+              title: const Text('Espace multimédia'),
+              onTap: () {
+                Navigator.pop(context); // Ferme le Drawer.
+                Navigator.push(context,
+                MaterialPageRoute(builder: (_) => const MultimediaPage()),);
               },
             ),
             ListTile(
